@@ -59,7 +59,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen relative font-['Plus_Jakarta_Sans',sans-serif] transition-colors duration-300 ${
-      theme === 'dark' ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'
+      theme === 'dark' ? 'bg-[#050505] text-slate-100' : 'bg-slate-50 text-slate-900'
     }`}>
       {/* Animated Canvas Background */}
       <AnimatedBackground theme={theme} />
