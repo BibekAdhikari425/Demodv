@@ -33,7 +33,7 @@ export const Projects: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
+            <div className="text-white/40 light:text-slate-500 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
               <FolderGit2 className="w-3.5 h-3.5 text-indigo-400" />
               <span>Selected Works</span>
             </div>
@@ -53,8 +53,8 @@ export const Projects: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
                   selectedCategory === cat
-                    ? 'bg-white text-black font-bold shadow-md'
-                    : 'bg-[#080808] light:bg-slate-100 text-white/50 light:text-slate-600 hover:text-white border border-white/10 light:border-slate-300'
+                    ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-md'
+                    : 'bg-[#080808] light:bg-slate-100 text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900 border border-white/10 light:border-slate-300'
                 }`}
               >
                 {cat}

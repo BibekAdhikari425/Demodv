@@ -60,10 +60,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
         
         {/* Eyebrow & Availability Status Badge */}
         <div className="flex flex-wrap items-center gap-4 mb-6">
-          <div className="text-white/40 text-[10px] uppercase tracking-[0.3em] font-mono font-medium">
+          <div className="text-white/40 light:text-slate-600 text-[10px] uppercase tracking-[0.3em] font-mono font-medium">
             Senior Full-Stack & AI Systems Engineer
           </div>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#080808] light:bg-white/90 border border-white/10 text-xs font-semibold text-emerald-400 light:text-emerald-700 shadow-lg backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#080808] light:bg-white border border-white/10 light:border-slate-300 text-xs font-semibold text-emerald-400 light:text-emerald-700 shadow-lg backdrop-blur-md">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
         <div className="max-w-4xl">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif italic leading-[1.1] text-white light:text-slate-900 mb-6 tracking-tight">
             Crafting digital architectures <br />
-            <span className="text-white/40 not-italic font-sans font-light">
+            <span className="text-white/40 light:text-slate-500 not-italic font-sans font-light">
               with precision & intent.
             </span>
           </h1>
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
           <div className="flex flex-wrap items-center gap-4 mb-12">
             <button
               onClick={() => scrollToSection('#projects')}
-              className="group flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white text-black hover:bg-slate-200 font-semibold text-xs uppercase tracking-wider transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg"
+              className="group flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white light:bg-slate-900 text-black light:text-white hover:bg-slate-200 light:hover:bg-slate-800 font-semibold text-xs uppercase tracking-wider transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg"
             >
               <span>Explore Works</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -102,15 +102,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
 
             <button
               onClick={() => scrollToSection('#contact')}
-              className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#080808] hover:bg-[#121212] light:bg-slate-100 text-white/80 light:text-slate-800 font-semibold text-xs uppercase tracking-wider border border-white/10 transition-all"
+              className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#080808] light:bg-white hover:bg-[#121212] light:hover:bg-slate-100 text-white/80 light:text-slate-800 font-semibold text-xs uppercase tracking-wider border border-white/10 light:border-slate-300 transition-all"
             >
-              <Mail className="w-4 h-4 text-white/60" />
+              <Mail className="w-4 h-4 text-white/60 light:text-slate-500" />
               <span>Get in Touch</span>
             </button>
 
             <button
               onClick={onOpenTerminalModal}
-              className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#080808] hover:bg-[#121212] text-indigo-400 font-mono text-xs font-semibold border border-indigo-500/30 transition-all shadow-sm"
+              className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#080808] light:bg-white hover:bg-[#121212] light:hover:bg-slate-100 text-indigo-400 light:text-indigo-600 font-mono text-xs font-semibold border border-indigo-500/30 light:border-indigo-300 transition-all shadow-sm"
               title="Launch Interactive Terminal"
             >
               <Terminal className="w-4 h-4" />
@@ -119,21 +119,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
 
             <button
               onClick={onOpenAIModal}
-              className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-indigo-950/40 hover:bg-indigo-900/50 text-indigo-300 text-xs font-semibold border border-indigo-500/30 transition-all"
+              className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-indigo-950/40 light:bg-indigo-50 hover:bg-indigo-900/50 light:hover:bg-indigo-100 text-indigo-300 light:text-indigo-700 text-xs font-semibold border border-indigo-500/30 light:border-indigo-200 transition-all"
             >
-              <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '4s' }} />
+              <Sparkles className="w-4 h-4 text-amber-300 light:text-amber-600 animate-spin" style={{ animationDuration: '4s' }} />
               <span>Ask AI Co-pilot</span>
             </button>
           </div>
 
           {/* Social Links Bar */}
           <div className="flex items-center gap-4 text-white/40 light:text-slate-600 mb-12">
-            <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-white/30">Connect:</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-white/30 light:text-slate-500">Connect:</span>
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-lg bg-[#080808] hover:bg-[#141414] text-white/70 hover:text-white border border-white/10 transition-colors"
+              className="p-2.5 rounded-lg bg-[#080808] light:bg-white hover:bg-[#141414] light:hover:bg-slate-100 text-white/70 light:text-slate-700 hover:text-white light:hover:text-slate-900 border border-white/10 light:border-slate-300 transition-colors"
               aria-label="GitHub"
             >
               <Github className="w-4 h-4" />
@@ -142,7 +142,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-lg bg-[#080808] hover:bg-[#141414] text-white/70 hover:text-white border border-white/10 transition-colors"
+              className="p-2.5 rounded-lg bg-[#080808] light:bg-white hover:bg-[#141414] light:hover:bg-slate-100 text-white/70 light:text-slate-700 hover:text-white light:hover:text-slate-900 border border-white/10 light:border-slate-300 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
@@ -151,14 +151,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
               href={PERSONAL_INFO.twitter}
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-lg bg-[#080808] hover:bg-[#141414] text-white/70 hover:text-white border border-white/10 transition-colors"
+              className="p-2.5 rounded-lg bg-[#080808] light:bg-white hover:bg-[#141414] light:hover:bg-slate-100 text-white/70 light:text-slate-700 hover:text-white light:hover:text-slate-900 border border-white/10 light:border-slate-300 transition-colors"
               aria-label="Twitter"
             >
               <Twitter className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${PERSONAL_INFO.email}`}
-              className="p-2.5 rounded-lg bg-[#080808] hover:bg-[#141414] text-white/70 hover:text-white border border-white/10 transition-colors"
+              className="p-2.5 rounded-lg bg-[#080808] light:bg-white hover:bg-[#141414] light:hover:bg-slate-100 text-white/70 light:text-slate-700 hover:text-white light:hover:text-slate-900 border border-white/10 light:border-slate-300 transition-colors"
               aria-label="Email"
             >
               <Mail className="w-4 h-4" />
@@ -171,12 +171,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAIModal, onOpenTerminalModal }
           {PERSONAL_INFO.stats.map((stat, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-[#080808] light:bg-white/80 border border-white/10 light:border-slate-200/80 backdrop-blur-sm hover:border-white/20 transition-all group"
+              className="p-5 rounded-2xl bg-[#080808] light:bg-white border border-white/10 light:border-slate-200 backdrop-blur-sm hover:border-white/20 light:hover:border-slate-300 transition-all group shadow-sm"
             >
-              <div className="text-3xl font-serif italic text-white mb-1 group-hover:scale-105 transition-transform origin-left">
+              <div className="text-3xl font-serif italic text-white light:text-slate-900 mb-1 group-hover:scale-105 transition-transform origin-left">
                 {stat.value}
               </div>
-              <div className="text-[11px] font-mono text-white/40 uppercase tracking-wider">
+              <div className="text-[11px] font-mono text-white/40 light:text-slate-600 uppercase tracking-wider">
                 {stat.label}
               </div>
             </div>

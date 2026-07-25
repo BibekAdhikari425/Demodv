@@ -81,7 +81,7 @@ export const Contact: React.FC = () => {
         
         {/* Header */}
         <div className="mb-16 max-w-2xl">
-          <div className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
+          <div className="text-white/40 light:text-slate-500 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
             <MessageSquare className="w-3.5 h-3.5 text-indigo-400" />
             <span>Initiate Collaboration</span>
           </div>

@@ -73,7 +73,7 @@ export const Skills: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
+            <div className="text-white/40 light:text-slate-500 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-indigo-400" />
               <span>Expertise Matrix</span>
             </div>
@@ -91,8 +91,8 @@ export const Skills: React.FC = () => {
               onClick={() => setViewMode('grid')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                 viewMode === 'grid'
-                  ? 'bg-white text-black font-bold shadow-sm'
-                  : 'text-white/50 light:text-slate-600 hover:text-white'
+                  ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-sm'
+                  : 'text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900'
               }`}
             >
               <Grid className="w-3.5 h-3.5" />
@@ -102,8 +102,8 @@ export const Skills: React.FC = () => {
               onClick={() => setViewMode('matrix')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                 viewMode === 'matrix'
-                  ? 'bg-white text-black font-bold shadow-sm'
-                  : 'text-white/50 light:text-slate-600 hover:text-white'
+                  ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-sm'
+                  : 'text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900'
               }`}
             >
               <BarChart3 className="w-3.5 h-3.5" />
@@ -113,8 +113,8 @@ export const Skills: React.FC = () => {
               onClick={() => setViewMode('tags')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                 viewMode === 'tags'
-                  ? 'bg-white text-black font-bold shadow-sm'
-                  : 'text-white/50 light:text-slate-600 hover:text-white'
+                  ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-sm'
+                  : 'text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900'
               }`}
             >
               <Tag className="w-3.5 h-3.5" />

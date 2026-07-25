@@ -23,7 +23,7 @@ export const Timeline: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
+            <div className="text-white/40 light:text-slate-500 text-[10px] uppercase tracking-[0.2em] font-mono mb-2 flex items-center gap-1.5">
               <Briefcase className="w-3.5 h-3.5 text-indigo-400" />
               <span>Career Trajectory</span>
             </div>
@@ -41,8 +41,8 @@ export const Timeline: React.FC = () => {
               onClick={() => setActiveTab('work')}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'work'
-                  ? 'bg-white text-black font-bold shadow-md'
-                  : 'text-white/50 light:text-slate-600 hover:text-white'
+                  ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-md'
+                  : 'text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900'
               }`}
             >
               <Briefcase className="w-4 h-4" />
@@ -52,8 +52,8 @@ export const Timeline: React.FC = () => {
               onClick={() => setActiveTab('education')}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'education'
-                  ? 'bg-white text-black font-bold shadow-md'
-                  : 'text-white/50 light:text-slate-600 hover:text-white'
+                  ? 'bg-white light:bg-slate-900 text-black light:text-white font-bold shadow-md'
+                  : 'text-white/50 light:text-slate-600 hover:text-white light:hover:text-slate-900'
               }`}
             >
               <GraduationCap className="w-4 h-4" />
